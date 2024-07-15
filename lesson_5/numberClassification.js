@@ -8,12 +8,12 @@
  *      }
  */
 
-let number  = 0;
+let number = 0;
 
 if (number > 0) {
-    console.log("Число додатнє");
-    } else if (number < 0) {
-        console.log("Число відємне");
-        } else {
-            console.log("Чиисло дорівнює 0");
-            }
+	console.log('Число додатнє');
+} else if (number < 0) {
+	console.log('Число відємне');
+} else {
+	console.log('Чиисло дорівнює 0');
+}
