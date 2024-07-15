@@ -1,7 +1,7 @@
 function printTextAfterDelay(text, delay) {
-    setTimeout(() => {
-      console.log(text);
-    }, delay);
-  }
+	setTimeout(() => {
+		console.log(text);
+	}, delay);
+}
 
-  printTextAfterDelay("Привіт, світ!", 2000);
+printTextAfterDelay('Привіт, світ!', 2000);
