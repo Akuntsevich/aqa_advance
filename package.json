@@ -4,18 +4,8 @@
   "description": "Cypress + JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npx simple-git-hooks"
-  },
-  
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "prepare": "husky",
+    "lint": "lint-staged"
   },
   "repository": {
     "type": "git",
