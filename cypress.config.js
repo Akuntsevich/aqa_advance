@@ -7,11 +7,7 @@ module.exports = defineConfig({
     viewportHeight: 720,
     supportFile: false,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    env: {
-      username: 'guest',
-      password: 'welcome2qauto'
+      // implement node event listeners here 
     },
   },
 });
