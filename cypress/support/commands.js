@@ -1,6 +1,6 @@
-  Cypress.Commands.add('typePassword', {precSubject: 'element'}, (subject, password) => {
+  /*Cypress.Commands.add('typePassword', {precSubject: 'element'}, (subject, password) => {
     cy.wrap(subject).type(password, {log: false});
-  });
+  });*/
 
 
 Cypress.Commands.overwrite('type', (originalFn, element, text, options) => {
