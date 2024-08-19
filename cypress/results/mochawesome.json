@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-08-17T16:36:55.550Z",
+    "end": "2024-08-17T16:37:04.409Z",
+    "duration": 8859,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "467cd390-e959-4132-b739-9e88e1e31c6e",
+      "title": "",
+      "fullFile": "cypress/e2e/homework_18_1.cy.js",
+      "file": "cypress/e2e/homework_18_1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e4d08d3-394f-4e11-985b-464cf935d09e",
+          "title": "Find buttons visibility",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Find all buttons on the header and check that they are ",
+              "fullTitle": "Find buttons visibility Find all buttons on the header and check that they are ",
+              "timedOut": null,
+              "duration": 4559,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header').within(() => {\n  cy.contains('a.header-link', 'Home').should('be.visible');\n  cy.contains('button.header-link', 'About').should('be.visible');\n  cy.contains('button.header-link', 'Contacts').should('be.visible');\n  cy.contains('button.header-link', 'Guest log in').should('be.visible');\n  cy.contains('button.btn-outline-white', 'Sign In').should('be.visible');\n});\ncy.contains('Sign up').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `header`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `header`, but never found it.\n    at Context.eval (webpack://aqa_advance/./cypress/e2e/homework_18_1.cy.js:11:11)",
+                "diff": null
+              },
+              "uuid": "49d764c2-f334-4e38-baaa-e7db7c45e73e",
+              "parentUUID": "7e4d08d3-394f-4e11-985b-464cf935d09e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should find and verify all links and buttons in the footer",
+              "fullTitle": "Find buttons visibility should find and verify all links and buttons in the footer",
+              "timedOut": null,
+              "duration": 4234,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[href=\"https://www.facebook.com/Hillel.IT.School\"]').should('be.visible');\ncy.get('[href=\"https://t.me/ithillel_kyiv\"]').should('be.visible');\ncy.get('[href=\"https://www.youtube.com/user/HillelITSchool?sub_confirmation=1\"]').should('be.visible');\ncy.get('[href=\"https://www.instagram.com/hillel_itschool/\"]').should('be.visible');\ncy.get('[href=\"https://www.linkedin.com/school/ithillel/\"]').should('be.visible');\ncy.get('[href=\"https://ithillel.ua\"]').should('be.visible');\ncy.get('[href=\"mailto:developer@ithillel.ua\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[href=\"https://www.facebook.com/Hillel.IT.School\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[href=\"https://www.facebook.com/Hillel.IT.School\"]`, but never found it.\n    at Context.eval (webpack://aqa_advance/./cypress/e2e/homework_18_1.cy.js:22:69)",
+                "diff": null
+              },
+              "uuid": "e1e6b4bd-e5dd-4d6f-a50d-170b8489ecd5",
+              "parentUUID": "7e4d08d3-394f-4e11-985b-464cf935d09e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "49d764c2-f334-4e38-baaa-e7db7c45e73e",
+            "e1e6b4bd-e5dd-4d6f-a50d-170b8489ecd5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8793,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

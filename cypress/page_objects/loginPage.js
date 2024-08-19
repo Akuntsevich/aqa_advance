@@ -7,6 +7,10 @@ class LoginPage {
         });
     }//+
 
+    visitWithoutForStudy(url) {
+        cy.visit(url);
+    }//
+
     clickSignInButton() {
         cy.get('button.header_signin').first().click();
     }//+
